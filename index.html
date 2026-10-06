@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jude Vinsher V | ECE Engineer & Data Analyst</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h2 {
+            font-size: 22px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 70px 8%;
+            background: white;
+        }
+
+        .hero-content {
+            max-width: 850px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 15px;
+            color: #111827;
+        }
+
+        .hero h3 {
+            font-size: 25px;
+            color: #2563eb;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #4b5563;
+            max-width: 750px;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 13px 24px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+        }
+
+        section {
+            padding: 70px 8%;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #111827;
+        }
+
+        .about {
+            background: #f5f7fa;
+        }
+
+        .about p {
+            max-width: 850px;
+            font-size: 17px;
+            color: #4b5563;
+        }
+
+        .projects {
+            background: white;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #f9fafb;
+            padding: 28px;
+            border-radius: 10px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .project-card p {
+            color: #4b5563;
+        }
+
+        .skills {
+            background: #f5f7fa;
+        }
+
+        .skill-group {
+            margin-bottom: 30px;
+        }
+
+        .skill-group h3 {
+            margin-bottom: 10px;
+            color: #2563eb;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill {
+            background: white;
+            padding: 9px 15px;
+            border-radius: 20px;
+            border: 1px solid #d1d5db;
+        }
+
+        .contact {
+            background: #111827;
+            color: white;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            margin-bottom: 10px;
+        }
+
+        .contact a {
+            color: #60a5fa;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #030712;
+            color: #9ca3af;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>JUDE VINSHER V</h2>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#engineering">Engineering</a>
+        <a href="#analytics">Analytics</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Jude Vinsher V</h1>
+
+        <h3>ECE Engineer | Data Analyst | Business Analytics Enthusiast</h3>
+
+        <p>
+            Engineering graduate with a background in Electronics and Communication Engineering,
+            combining technical problem-solving with data analytics, visualization and
+            business intelligence.
+        </p>
+
+        <a href="#analytics" class="button">View My Projects</a>
+
+        <a href="#contact" class="button">Contact Me</a>
+
+    </div>
+
+</section>
+
+
+<section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am an Electronics and Communication Engineering graduate with an interest in
+        Data Analytics and Business Analytics. My technical background includes electronics,
+        IoT and engineering projects, while my analytics experience includes Excel, SQL,
+        Power BI, Tableau and Python.
+    </p>
+
+    <br>
+
+    <p>
+        I enjoy working with data to identify patterns, generate insights and support
+        better business decisions. My goal is to combine engineering knowledge with
+        analytical and business problem-solving skills.
+    </p>
+
+</section>
+
+
+<section class="projects" id="engineering">
+
+    <h2>Engineering Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <h3>🌱 Plant Disease Detection</h3>
+
+            <p>
+                Developed a low-cost non-invasive plant disease detection concept
+                using ESP32-based transmitter and receiver systems, Wi-Fi CSI signals
+                and signal analysis techniques.
+            </p>
+
+            <br>
+
+            <strong>Technologies:</strong>
+
+            <p>ESP32 | Wi-Fi CSI | IoT | Signal Analysis</p>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>⚙️ Industrial IoT 4.0</h3>
+
+            <p>
+                Completed an Industrial IoT project involving IoT concepts,
+                troubleshooting, system connections and Raspberry Pi-based
+                technology exploration.
+            </p>
+
+            <br>
+
+            <strong>Technologies:</strong>
+
+            <p>IoT | Raspberry Pi | Industrial Automation</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="projects" id="analytics">
+
+    <h2>Data Analytics Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <h3>📊 Sales & Profit Analysis</h3>
+
+            <p>
+                Analyzed sales and profitability data to identify product and
+                regional performance trends. Performed data analysis using Excel
+                and MySQL and created interactive dashboards using Power BI
+                and Tableau.
+            </p>
+
+            <br>
+
+            <strong>Tools:</strong>
+
+            <p>Excel | MySQL | Power BI | Tableau</p>
+
+            <br>
+
+            <a href="#" class="button">View Project</a>
+
+        </div>
+
+
+        <div class="project-card">
+
+            <h3>📈 Future Analytics Project</h3>
+
+            <p>
+                A new business-focused analytics project will be added here.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="skills" id="skills">
+
+    <h2>Skills</h2>
+
+
+    <div class="skill-group">
+
+        <h3>Data Analytics</h3>
+
+        <div class="skill-list">
+
+            <span class="skill">Excel</span>
+            <span class="skill">SQL / MySQL</span>
+            <span class="skill">Power BI</span>
+            <span class="skill">Tableau</span>
+            <span class="skill">Python</span>
+            <span class="skill">Data Cleaning</span>
+            <span class="skill">Data Visualization</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="skill-group">
+
+        <h3>Engineering & Technology</h3>
+
+        <div class="skill-list">
+
+            <span class="skill">Electronics</span>
+            <span class="skill">ECE</span>
+            <span class="skill">ESP32</span>
+            <span class="skill">IoT</span>
+            <span class="skill">Raspberry Pi</span>
+            <span class="skill">Wi-Fi CSI</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="skill-group">
+
+        <h3>Business & Professional</h3>
+
+        <div class="skill-list">
+
+            <span class="skill">Business Analysis</span>
+            <span class="skill">Business Intelligence</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Analytical Thinking</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        I am open to opportunities in Data Analytics, Business Analytics
+        and related entry-level roles.
+    </p>
+
+    <br>
+
+    <p>
+        Email:
+        <a href="mailto:YOUR_EMAIL@example.com">
+            YOUR_EMAIL@example.com
+        </a>
+    </p>
+
+    <p>
+        LinkedIn:
+        <a href="#" target="_blank">
+            Add your LinkedIn
+        </a>
+    </p>
+
+    <p>
+        GitHub:
+        <a href="#" target="_blank">
+            Add your GitHub
+        </a>
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>© 2026 Jude Vinsher V | ECE Engineer & Data Analyst</p>
+
+</footer>
+
+</body>
+</html>
